@@ -1,78 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- ✅ Basic Setup -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery | Daniel Gallego</title>
+
+  <!-- ✅ Title + Description -->
+  <title>Gallery | Architectural and Urban Photography by Daniel Gallego</title>
+  <meta name="description" content="Explore the gallery of architectural and urban photography by Daniel Gallego. Discover modern cityscapes, patterns, and artistic structures captured through geometry and light." />
+
+  <!-- ✅ Keywords -->
+  <meta name="keywords" content="gallery, photography, architectural photography, urban photography, cityscapes, buildings, art, Daniel Gallego" />
+
+  <!-- ✅ Canonical URL -->
+  <link rel="canonical" href="https://ainycodes07.github.io/photography-portfolio/gallery.html" />
+
+  <!-- ✅ Open Graph (for social sharing) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gallery | Architectural and Urban Photography by Daniel Gallego" />
+  <meta property="og:description" content="Explore modern cityscapes, geometric structures, and light compositions in the photography gallery of Daniel Gallego." />
+  <meta property="og:image" content="https://ainycodes07.github.io/photography-portfolio/10.png" />
+  <meta property="og:url" content="https://ainycodes07.github.io/photography-portfolio/gallery.html" />
+  <meta property="og:site_name" content="Daniel Gallego Photography" />
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gallery | Architectural and Urban Photography by Daniel Gallego" />
+  <meta name="twitter:description" content="Explore the architectural and urban photography gallery by Daniel Gallego. Artistic visuals of buildings, geometry, and light." />
+  <meta name="twitter:image" content="https://ainycodes07.github.io/photography-portfolio/10.png" />
+
+  <!-- ✅ Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ImageGallery",
+    "name": "Architectural and Urban Photography Gallery",
+    "url": "https://ainycodes07.github.io/photography-portfolio/gallery.html",
+    "creator": {
+      "@type": "Person",
+      "name": "Daniel Gallego",
+      "jobTitle": "Photographer",
+      "url": "https://ainycodes07.github.io/photography-portfolio/"
+    },
+    "description": "A curated selection of architectural and urban photographs by Daniel Gallego, exploring light, geometry, and modern cityscapes."
+  }
+  </script>
+
+  <!-- ✅ Styles & Scripts -->
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 
 <body>
 
-  <!-- Navigation -->
+  <!-- ✅ Navigation -->
   <header class="navbar">
     <div class="logo">Daniel Gallego</div>
 
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="gallery.html">Gallery</a>
+      <a href="gallery.html" class="active">Gallery</a>
       <a href="contact.html">Contact</a>
     </nav>
 
     <div class="menu-icon" id="menu-toggle">☰</div>
   </header>
 
-  <!-- Gallery Section -->
-  <section class="gallery">
-    <div class="gallery-header">
-      <h2>Gallery</h2>
-    </div>
+  <!-- ✅ Main Gallery Section -->
+  <main>
+    <section class="gallery">
+      <!-- ✅ Page Heading (H1) -->
+      <div class="gallery-header">
+        <h1>Gallery</h1>
+        <p>Explore a selection of Daniel Gallego’s architectural and urban photography. Each image captures light, form, and the rhythm of modern cityscapes.</p>
+      </div>
 
-    <div class="gallery-row gallery-row-1">
-      <figure class="gallery-item large">
-        <img src="10.png" alt="Museum of Contemporary Art" />
-        <figcaption>2030 – Museum of Contemporary Art</figcaption>
-      </figure>
+      <!-- ✅ Gallery Grid -->
+      <div class="gallery-row gallery-row-1">
+        <figure class="gallery-item large">
+          <img src="10.png" alt="Museum of Contemporary Art" width="800" height="600" />
+          <figcaption>2030 – Museum of Contemporary Art</figcaption>
+        </figure>
 
-      <figure class="gallery-item tall">
-        <img src="11.png" alt="The Corner of Dew Street" />
-        <figcaption>2028 – The Corner of Dew Street</figcaption>
-      </figure>
-    </div>
+        <figure class="gallery-item tall">
+          <img src="11.png" alt="The Corner of Dew Street" width="600" height="800" />
+          <figcaption>2028 – The Corner of Dew Street</figcaption>
+        </figure>
+      </div>
 
-    <div class="gallery-row gallery-row-2">
-      <figure class="gallery-item small">
-        <img src="9.png" alt="It's Not Even Spring" />
-        <figcaption>2027 – It's Not Even Spring</figcaption>
-      </figure>
+      <div class="gallery-row gallery-row-2">
+        <figure class="gallery-item small">
+          <img src="9.png" alt="It's Not Even Spring" width="500" height="500" />
+          <figcaption>2027 – It's Not Even Spring</figcaption>
+        </figure>
 
-      <figure class="gallery-item small">
-        <img src="5.png" alt="A Singular Path" />
-        <figcaption>2023 – A Singular Path</figcaption>
-      </figure>
-    </div>
+        <figure class="gallery-item small">
+          <img src="5.png" alt="A Singular Path" width="500" height="500" />
+          <figcaption>2023 – A Singular Path</figcaption>
+        </figure>
+      </div>
 
-    <div class="gallery-row gallery-row-3">
-      <figure class="gallery-item wide">
-        <img src="8.png" alt="Resin Patterns" />
-        <figcaption>2024 – Resin Patterns by Artist Chun Hei Kim</figcaption>
-      </figure>
-    </div>
+      <div class="gallery-row gallery-row-3">
+        <figure class="gallery-item wide">
+          <img src="8.png" alt="Resin Patterns by Artist Chun Hei Kim" width="900" height="600" />
+          <figcaption>2024 – Resin Patterns by Artist Chun Hei Kim</figcaption>
+        </figure>
+      </div>
 
-    <div class="gallery-row gallery-row-4">
-      <p class="gallery-quote">
-        The Optimum Building was a joy to capture because whichever angle I chose to shoot from,
-        there was always a new pattern to witness.
-      </p>
+      <div class="gallery-row gallery-row-4">
+        <p class="gallery-quote">
+          “The Optimum Building was a joy to capture — every angle revealed a new rhythm, a new pattern of design and light.”
+        </p>
 
-      <figure class="gallery-item medium">
-        <img src="7.png" alt="Human Eye View" />
-        <figcaption>2025 – Human Eye View</figcaption>
-      </figure>
-    </div>
-  </section>
+        <figure class="gallery-item medium">
+          <img src="7.png" alt="Human Eye View" width="700" height="600" />
+          <figcaption>2025 – Human Eye View</figcaption>
+        </figure>
+      </div>
 
-  <script src="script.js"></script>
+      <!-- ✅ Internal Links (SEO Boost) -->
+      <div class="gallery-links">
+        <p>Want to know more about the artist? Visit the <a href="about.html">About</a> page or <a href="contact.html">get in touch</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ✅ Hidden Footer for SEO -->
+  <footer style="display:none;">
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </footer>
+
+  <!-- ✅ Hidden SEO paragraph -->
+  <p style="display:none;">
+    Architectural and urban photography gallery by Daniel Gallego. Explore modern cityscapes, geometry, and artistic visual storytelling.
+  </p>
+
 </body>
 </html>
