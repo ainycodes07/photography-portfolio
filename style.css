@@ -226,7 +226,7 @@ body {
   justify-content: center;
 }
 
-.about-content h2 {
+.about-content h1, .about-content h2 {
   font-family: 'Luxurious Roman', serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -494,3 +494,4 @@ body {
     height: 350px;
   }
 }
+
